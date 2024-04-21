@@ -1,0 +1,5 @@
+if(1,2){
+norte(norte,1)
+} else{
+sur(sur,10)
+}
