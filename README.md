@@ -17,23 +17,34 @@ Este incluye:
 - Las acciones a aejecutar dependiendo del match de una expresion
 - Puede incluir código necesario previo
 
+  ![image](https://github.com/AjCu/jflex-tiny/assets/33881631/03d4267b-5cc0-4b12-ac5e-3c343345f57e)
+
+
 Se crea un archivo para analizar el flex con JFLEX y generar la clase
 
 Este archivo simplemente evalua el archivo tiny.flex que creamos y crea a traves de JFlex generate la clase autogenerada que vamos a usar.
 
+![image](https://github.com/AjCu/jflex-tiny/assets/33881631/45d2330d-9fae-43ab-a40f-809c7577248f)
+
 
 Si no hay errores de compilacion se crea Tiny.Java exitosamente
 
+![image](https://github.com/AjCu/jflex-tiny/assets/33881631/916becbe-cd8b-4c21-89f4-244918c9a80c)
 
 
 Se crea un archivo de prueba para probar nuestra clase autogenerada por JFlex, va a tener el siguiente contenido
 
+![image](https://github.com/AjCu/jflex-tiny/assets/33881631/3acb6b9a-c730-498c-ae31-dee05ac5553d)
 
 
 Finalmente creamos una clase App que use esa clase Tiny que generamos, en este caso como el archivo flex lo determinamos para retornar un objeto de tipo Symbol, declaramos una variable que lea el match y lo guarde en el Symbol, e iteramos el contenido, el token numerico y en que tipo caeria.
 
+![image](https://github.com/AjCu/jflex-tiny/assets/33881631/a9179208-7a31-465f-b945-d1c85fbcd516)
 
 
 Para efectos practicos solo creamos los tokens tiny de RESERVADA, NUMERO Y OTRO.
 
 Al ejecutar obtenemos esta salida: 
+
+![image](https://github.com/AjCu/jflex-tiny/assets/33881631/072ce1ed-4014-41ea-97a7-a10f1af38b4a)
+
