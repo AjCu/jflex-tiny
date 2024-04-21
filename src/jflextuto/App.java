@@ -27,7 +27,7 @@ public class App {
         switch (n_token) {
             case 2:
                 return "RESERVADA";
-            case 5:
+            case 7:
                 return "NUMERO";
             default:
                 return "OTRO";
