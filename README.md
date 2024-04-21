@@ -9,7 +9,8 @@ Este incluye:
 - Las acciones a aejecutar dependiendo del match de una expresion
 - Puede incluir código necesario previo
 
-  ![image](https://github.com/AjCu/jflex-tiny/assets/33881631/03d4267b-5cc0-4b12-ac5e-3c343345f57e)
+ ![image](https://github.com/AjCu/jflex-tiny/assets/33881631/4315614e-eefd-412c-83ac-b807dc29531b)
+
 
 
 # Se crea un archivo para analizar el flex con JFLEX y generar la clase
@@ -38,7 +39,8 @@ Para efectos practicos solo creamos los tokens tiny de RESERVADA, NUMERO Y OTRO.
 
 # Al ejecutar obtenemos esta salida: 
 
-![image](https://github.com/AjCu/jflex-tiny/assets/33881631/072ce1ed-4014-41ea-97a7-a10f1af38b4a)
+![image](https://github.com/AjCu/jflex-tiny/assets/33881631/6d6f6760-230b-4fa4-b0ba-893c4cf1f3e4)
+
 
 Alberto Cristancho C.I V-24.782.650
 
