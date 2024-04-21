@@ -1,18 +1,48 @@
-## Getting Started
+## Explicación:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Se crea el archivo .flex
 
-## Folder Structure
+Este incluye:
 
-The workspace contains two folders by default, where:
+- Especificaciones de la clase a generar
+- Las expresiones regulares a detectar
+- Las acciones a aejecutar dependiendo del match de una expresion
+- Puede incluir código necesario previo
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+ ![image](https://github.com/AjCu/jflex-tiny/assets/33881631/4315614e-eefd-412c-83ac-b807dc29531b)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
+# Se crea un archivo para analizar el flex con JFLEX y generar la clase
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Este archivo simplemente evalua el archivo tiny.flex que creamos y crea a traves de JFlex generate la clase autogenerada que vamos a usar.
+
+![image](https://github.com/AjCu/jflex-tiny/assets/33881631/45d2330d-9fae-43ab-a40f-809c7577248f)
+
+
+Si no hay errores de compilacion se crea Tiny.Java exitosamente
+
+![image](https://github.com/AjCu/jflex-tiny/assets/33881631/916becbe-cd8b-4c21-89f4-244918c9a80c)
+
+
+# Se crea un archivo de prueba para probar nuestra clase autogenerada por JFlex, va a tener el siguiente contenido
+
+![image](https://github.com/AjCu/jflex-tiny/assets/33881631/3acb6b9a-c730-498c-ae31-dee05ac5553d)
+
+
+Finalmente creamos una clase App que use esa clase Tiny que generamos, en este caso como el archivo flex lo determinamos para retornar un objeto de tipo Symbol, declaramos una variable que lea el match y lo guarde en el Symbol, e iteramos el contenido, el token numerico y en que tipo caeria.
+
+![image](https://github.com/AjCu/jflex-tiny/assets/33881631/a9179208-7a31-465f-b945-d1c85fbcd516)
+
+
+Para efectos practicos solo creamos los tokens tiny de RESERVADA, NUMERO Y OTRO.
+
+# Al ejecutar obtenemos esta salida: 
+
+![image](https://github.com/AjCu/jflex-tiny/assets/33881631/6d6f6760-230b-4fa4-b0ba-893c4cf1f3e4)
+
+
+Alberto Cristancho C.I V-24.782.650
+
+San Cristóbal, Abril 2024.
+
