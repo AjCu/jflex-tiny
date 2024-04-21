@@ -32,14 +32,16 @@ Si no hay errores de compilacion se crea Tiny.Java exitosamente
 
 Finalmente creamos una clase App que use esa clase Tiny que generamos, en este caso como el archivo flex lo determinamos para retornar un objeto de tipo Symbol, declaramos una variable que lea el match y lo guarde en el Symbol, e iteramos el contenido, el token numerico y en que tipo caeria.
 
-![image](https://github.com/AjCu/jflex-tiny/assets/33881631/a9179208-7a31-465f-b945-d1c85fbcd516)
+![image](https://github.com/AjCu/jflex-tiny/assets/33881631/eb956f66-64af-4719-bc81-55fb1afb7a6c)
+
 
 
 Para efectos practicos solo creamos los tokens tiny de RESERVADA, NUMERO Y OTRO.
 
 # Al ejecutar obtenemos esta salida: 
 
-![image](https://github.com/AjCu/jflex-tiny/assets/33881631/6d6f6760-230b-4fa4-b0ba-893c4cf1f3e4)
+![image](https://github.com/AjCu/jflex-tiny/assets/33881631/3feeaea8-05ec-48a3-ab3e-3eac22a4a1ac)
+
 
 
 Alberto Cristancho C.I V-24.782.650
