@@ -6,8 +6,8 @@ import java_cup.runtime.Symbol;
 %line
 %type java_cup.runtime.Symbol
 %%
-[if]+         { return new Symbol(1,yytext());}
-[else]+       { return new Symbol(1,yytext());}
+[if]+         { return new Symbol(2,yytext());}
+[else]+       { return new Symbol(2,yytext());}
 [then]+       { return new Symbol(2,yytext());}
 [repeat]+     { return new Symbol(2,yytext());}
 [until]+      { return new Symbol(2,yytext());}
